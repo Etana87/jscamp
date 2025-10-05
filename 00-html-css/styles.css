@@ -108,7 +108,7 @@ header {
 /* Navegación del header a otras páginas */
 nav {
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
   display: flex;
 
   a {
@@ -135,6 +135,9 @@ header div a {
   font-weight: 700;
   text-decoration: none;
   /* TODO */
+}
+header div a:nth-child(1) {
+  color: var(--primary-light);
 }
 
 /* Hero */
@@ -167,7 +170,13 @@ form {
   max-width: 42rem;
   width: 100%;
   margin: 0 auto;
-  padding-inline: 1rem;
+  padding-inline: 0.75rem;
+  padding-block: 0.5rem;
+  display:flex;
+  align-items: center;
+  gap: 16px;
+  background: var(--card-bg);
+  border-radius: 0.5rem;
 }
 
 form > div {
@@ -206,7 +215,7 @@ form input[type="text"]::placeholder {
 form button[type="submit"] {
   padding: 0.75rem 1.5rem;
   border-radius: 0.5rem;
-  background-color: var(--primary);
+  background-color: var(--primary-light);
   color: white;
   font-weight: 700;
   border: none;
